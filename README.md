@@ -32,7 +32,7 @@ In other words: the business is growing a loss-making product line, and volume g
 ### Logical data model (Bus matrix)
 ![Bus Matrix](img/bus_matrix.png)
 
-### Technical architecture diagrma
+### Technical architecture diagram
 ![End-to-End Analytics Architecture](<img/architecture diagram.png>)
 
 ![Lakehouse](img/lakehouse_meridian.png)
