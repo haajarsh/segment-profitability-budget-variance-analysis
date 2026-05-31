@@ -1,0 +1,69 @@
+metric_id,metric_name,display_name,display_order,metric_type,pnl_section,sign_convention,unit_type,decimal_places,format_string,dax_reference,description,is_kpi,category_group
+1,Total Revenue,Revenue,10,Component,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Total Revenue],"Total revenue from all operating segments — postal, parcel, aviation, logistics, retail",TRUE,Profitability
+2,Total Direct Cost,Direct Cost,20,Component,Operating,Negative,Currency,0,"#,##0;(#,##0)",[Total Direct Cost],"Variable costs directly attributable to revenue — linehaul, fuel, last-mile, COGS",FALSE,Profitability
+3,Gross Profit,Gross Profit,30,Subtotal,Revenue,Net,Currency,0,"#,##0;(#,##0)",[Gross Profit],Revenue minus direct costs — measures unit economics and pricing power,TRUE,Profitability
+4,Gross Profit Margin %,Gross Margin %,35,Subtotal,Revenue,Net,Percentage,1,0.0%;(0.0%),[Gross Profit Margin %],Gross profit as a percentage of revenue — pricing health indicator,FALSE,Profitability
+5,Total Staff Cost,Staff Cost,40,Component,Operating,Negative,Currency,0,"#,##0;(#,##0)",[Total Staff Cost],"All employee-related costs — salaries, benefits, EPF, training",FALSE,Profitability
+6,Total OPEX,OPEX,50,Component,Operating,Negative,Currency,0,"#,##0;(#,##0)",[Total OPEX],"Operating expenses excluding direct costs and staff — rent, utilities, IT, marketing, insurance, D&A",FALSE,Profitability
+7,Total D&A,D&A,55,Component,Operating,Negative,Currency,0,"#,##0;(#,##0)",[Total D&A],Depreciation and amortization — non-cash charge representing asset consumption,FALSE,Profitability
+8,EBITDA,EBITDA,60,Subtotal,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBITDA],"Earnings before interest, tax, depreciation, and amortization — proxy for cash from operations",TRUE,Profitability
+9,EBITDA Margin %,EBITDA Margin %,65,Subtotal,Operating,Net,Percentage,1,0.0%;(0.0%),[EBITDA Margin %],EBITDA as a percentage of revenue — operational profitability without capital structure effects,FALSE,Profitability
+10,EBIT,EBIT,70,Subtotal,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT],Earnings before interest and tax — operating profit including D&A,TRUE,Profitability
+11,EBIT Margin %,EBIT Margin %,75,Subtotal,Operating,Net,Percentage,1,0.0%;(0.0%),[EBIT Margin %],EBIT as a percentage of revenue — accounting operating profitability,FALSE,Profitability
+12,Total Interest Expense,Interest Expense,80,Component,Below-Line,Negative,Currency,0,"#,##0;(#,##0)",[Total Interest Expense],Cost of debt financing — interest on borrowings,FALSE,Profitability
+13,Total FX Gain Loss,FX Gain/(Loss),85,Component,Below-Line,Net,Currency,0,"#,##0;(#,##0)",[Total FX Gain Loss],"Foreign exchange impact — gains positive, losses negative",FALSE,Profitability
+14,Profit Before Tax,Profit Before Tax,90,Subtotal,Below-Line,Net,Currency,0,"#,##0;(#,##0)",[Profit Before Tax],EBIT less interest plus FX — earnings before tax provision,FALSE,Profitability
+15,Total Tax Expense,Tax Expense,95,Component,Below-Line,Negative,Currency,0,"#,##0;(#,##0)",[Total Tax Expense],Corporate income tax provision — typically 22-24% of taxable profit in Malaysia,FALSE,Profitability
+16,Net Profit,Net Profit,100,Subtotal,Profit,Net,Currency,0,"#,##0;(#,##0)",[Net Profit],Bottom-line profit attributable to shareholders — final P&L line,TRUE,Profitability
+17,Net Profit Margin %,Net Profit Margin %,105,Subtotal,Profit,Net,Percentage,1,0.0%;(0.0%),[Net Profit Margin %],Net profit as a percentage of revenue — overall profitability ratio,FALSE,Profitability
+18,Revenue Actual,Revenue (AC),200,Scenario,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue Actual],Revenue locked to Actual scenario — used in side-by-side comparisons,FALSE,Scenario
+19,Revenue Budget,Revenue (BU),210,Scenario,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue Budget],Revenue locked to Budget scenario — annual plan baseline,FALSE,Scenario
+20,Revenue Forecast,Revenue (FC),220,Scenario,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue Forecast],Revenue locked to Forecast scenario — rolling re-forecast view,FALSE,Scenario
+21,Revenue Prior Year,Revenue (PY),230,Scenario,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue Prior Year],Revenue locked to Prior Year scenario — same period last year,FALSE,Scenario
+22,EBIT Actual,EBIT (AC),240,Scenario,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT Actual],EBIT locked to Actual scenario,FALSE,Scenario
+23,EBIT Budget,EBIT (BU),250,Scenario,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT Budget],EBIT locked to Budget scenario,FALSE,Scenario
+24,EBIT Forecast,EBIT (FC),260,Scenario,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT Forecast],EBIT locked to Forecast scenario,FALSE,Scenario
+25,EBIT Prior Year,EBIT (PY),270,Scenario,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT Prior Year],EBIT locked to Prior Year scenario,FALSE,Scenario
+26,Revenue Var vs Budget,ΔRev vs BU,300,Variance,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[Revenue Var vs Budget],Absolute revenue variance — Actual minus Budget,TRUE,Variance
+27,Revenue Var % vs Budget,ΔRev % vs BU,310,Variance,Variance,Net,Percentage,1,+0.0%;-0.0%;0.0%,[Revenue Var % vs Budget],Percentage revenue variance vs Budget,TRUE,Variance
+28,Revenue Var vs PY,ΔRev vs PY,320,Variance,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[Revenue Var vs PY],Absolute revenue variance — Actual minus Prior Year,TRUE,Variance
+29,Revenue Var % vs PY,ΔRev % vs PY,330,Variance,Variance,Net,Percentage,1,+0.0%;-0.0%;0.0%,[Revenue Var % vs PY],Percentage revenue variance vs Prior Year — YoY growth,TRUE,Variance
+30,EBIT Var vs Budget,ΔEBIT vs BU,340,Variance,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[EBIT Var vs Budget],Absolute EBIT variance — Actual minus Budget,FALSE,Variance
+31,EBIT Var vs PY,ΔEBIT vs PY,350,Variance,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[EBIT Var vs PY],Absolute EBIT variance — Actual minus Prior Year,FALSE,Variance
+32,EBIT Margin Var vs Budget pp,ΔEBIT Margin vs BU,360,Variance,Variance,Net,PercentagePoints,1,"+0.0"" pp"";-0.0"" pp""",[EBIT Margin Var vs Budget pp],Margin variance in percentage points — IBCS standard for margin comparisons,FALSE,Variance
+33,Account Variance vs Budget,Account ΔBU,370,Variance,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[Account Variance vs Budget],Universal variance respecting cost sign convention — positive always favorable to EBIT,FALSE,Variance
+34,Variance Magnitude,|Δ|,380,Variance,Variance,Positive,Currency,0,"#,##0",[Variance Magnitude],Absolute value of variance — used for top-N ranking regardless of direction,FALSE,Variance
+35,Revenue YTD,Revenue YTD,400,TimeIntelligence,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue YTD],Year-to-date revenue accumulation,TRUE,TimeIntelligence
+36,Revenue MTD,Revenue MTD,410,TimeIntelligence,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue MTD],Month-to-date revenue — at monthly grain equals single month,FALSE,TimeIntelligence
+37,Revenue QTD,Revenue QTD,420,TimeIntelligence,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue QTD],Quarter-to-date revenue accumulation,FALSE,TimeIntelligence
+38,Revenue Rolling 12M,Revenue R12M,430,TimeIntelligence,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue Rolling 12M],Trailing 12-month revenue — smooths seasonality for trend detection,TRUE,TimeIntelligence
+39,Revenue YTD PY,Revenue YTD PY,440,TimeIntelligence,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Revenue YTD PY],YTD revenue for the same period last year,FALSE,TimeIntelligence
+40,Revenue YTD Var % vs PY,Rev YTD vs PY %,450,TimeIntelligence,Variance,Net,Percentage,1,+0.0%;-0.0%;0.0%,[Revenue YTD Var % vs PY],YTD percentage growth vs prior-year YTD,TRUE,TimeIntelligence
+41,EBIT YTD,EBIT YTD,460,TimeIntelligence,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT YTD],Year-to-date EBIT accumulation,FALSE,TimeIntelligence
+42,EBIT Rolling 12M,EBIT R12M,470,TimeIntelligence,Operating,Net,Currency,0,"#,##0;(#,##0)",[EBIT Rolling 12M],Trailing 12-month EBIT — smooths seasonality,FALSE,TimeIntelligence
+43,Total Parcels,Parcels,500,Operational,Volume,Positive,Count,0,"#,##0",[Total Parcels],Total parcels delivered across all entities and tiers,TRUE,Operational
+44,Parcel Net Revenue,Parcel Net Rev,510,Operational,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Parcel Net Revenue],Net parcel revenue after discounts — distinct from gross,TRUE,Operational
+45,Parcel Gross Revenue,Parcel Gross Rev,520,Operational,Revenue,Positive,Currency,0,"#,##0;(#,##0)",[Parcel Gross Revenue],Gross parcel revenue before customer discounts,FALSE,Operational
+46,Parcel Variable Cost,Parcel Var Cost,530,Operational,Operating,Negative,Currency,0,"#,##0;(#,##0)",[Parcel Variable Cost],"Variable cost per parcel — linehaul, last-mile, fuel attributed to parcels",FALSE,Operational
+47,Parcel Contribution Margin,Parcel CM,540,Operational,Operating,Net,Currency,0,"#,##0;(#,##0)",[Parcel Contribution Margin],Net parcel revenue minus variable cost — contribution to fixed costs and profit,FALSE,Operational
+48,Revenue per Parcel,Rev/Parcel,550,Operational,Unit Economics,Positive,Currency,2,"""RM ""#,##0.00",[Revenue per Parcel],Yield per parcel — net revenue divided by parcel count,TRUE,Operational
+49,Cost per Parcel,Cost/Parcel,560,Operational,Unit Economics,Negative,Currency,2,"""RM ""#,##0.00",[Cost per Parcel],Variable cost per parcel — direct cost economics,FALSE,Operational
+50,Contribution Margin per Parcel,CM/Parcel,570,Operational,Unit Economics,Net,Currency,2,"""RM ""#,##0.00",[Contribution Margin per Parcel],Margin per parcel — most actionable parcel KPI for pricing decisions,TRUE,Operational
+51,Discount %,Discount %,580,Operational,Variance,Net,Percentage,1,0.0%,[Discount %],Average discount from gross to net revenue — competitive pricing pressure indicator,FALSE,Operational
+52,Parcels YoY %,Parcels YoY %,590,Operational,Variance,Net,Percentage,1,+0.0%;-0.0%;0.0%,[Parcels YoY %],Year-over-year parcel volume growth percentage,TRUE,Operational
+53,Revenue per Parcel YoY %,Rev/P YoY %,600,Operational,Variance,Net,Percentage,1,+0.0%;-0.0%;0.0%,[Revenue per Parcel YoY %],YoY change in yield — key indicator of pricing power,TRUE,Operational
+54,Contribution Margin per Parcel YoY %,CM/P YoY %,610,Operational,Variance,Net,Percentage,1,+0.0%;-0.0%;0.0%,[Contribution Margin per Parcel YoY %],YoY change in unit margin — captures combined yield and cost effects,TRUE,Operational
+55,Volume Effect,Volume Effect,700,PVM,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[Volume Effect],Revenue change driven by volume change at prior-year prices,TRUE,PVM
+56,Price Effect,Price Effect,710,PVM,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[Price Effect],Revenue change driven by price change on current-year volumes,TRUE,PVM
+57,Mix Effect,Mix Effect,720,PVM,Variance,Net,Currency,0,"+#,##0;-#,##0;0",[Mix Effect],Revenue change driven by shift in product/tier mix,TRUE,PVM
+58,PVM Reconciliation,PVM Recon,730,PVM,Variance,Net,Currency,0,"#,##0;(#,##0)",[PVM Reconciliation],Validation measure — should always equal zero,FALSE,PVM
+59,Parcel Volume CY,Volume CY,740,PVM,Volume,Positive,Count,0,"#,##0",[Parcel Volume CY],Current-year parcel volume — PVM reference point,FALSE,PVM
+60,Parcel Volume PY,Volume PY,750,PVM,Volume,Positive,Count,0,"#,##0",[Parcel Volume PY],Prior-year parcel volume — PVM reference point,FALSE,PVM
+61,Avg Price CY,Avg Price CY,760,PVM,Unit Economics,Positive,Currency,2,"""RM ""#,##0.00",[Avg Price CY],Current-year average revenue per parcel,FALSE,PVM
+62,Avg Price PY,Avg Price PY,770,PVM,Unit Economics,Positive,Currency,2,"""RM ""#,##0.00",[Avg Price PY],Prior-year average revenue per parcel,FALSE,PVM
+63,DSO,DSO,800,WorkingCapital,Cash Conversion,Negative,Days,0,"#,##0"" days""",[DSO],Days Sales Outstanding — average days to collect receivables,FALSE,WorkingCapital
+64,DPO,DPO,810,WorkingCapital,Cash Conversion,Positive,Days,0,"#,##0"" days""",[DPO],Days Payable Outstanding — average days before paying suppliers,FALSE,WorkingCapital
+65,DIO,DIO,820,WorkingCapital,Cash Conversion,Negative,Days,0,"#,##0"" days""",[DIO],Days Inventory Outstanding — average days inventory held,FALSE,WorkingCapital
+66,Cash Conversion Cycle,CCC,830,WorkingCapital,Cash Conversion,Negative,Days,0,"#,##0"" days""",[Cash Conversion Cycle],DSO plus DIO minus DPO — total days cash is tied up in operations,FALSE,WorkingCapital
+67,Total AR,AR Total,840,WorkingCapital,Balance Sheet,Net,Currency,0,"#,##0;(#,##0)",[Total AR],Total accounts receivable balance,FALSE,WorkingCapital
+68,AR > 60 Days %,AR > 60 days,850,WorkingCapital,Balance Sheet,Negative,Percentage,1,0.0%,[% AR > 60 Days],Aging risk indicator — share of AR overdue beyond 60 days,FALSE,WorkingCapital
