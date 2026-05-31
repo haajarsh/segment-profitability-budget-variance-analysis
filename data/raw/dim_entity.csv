@@ -1,0 +1,9 @@
+entity_key,entity_code,entity_name,segment_key,entity_type,is_active
+1,MPS,Meridian Postal Services,1,Operating,True
+2,MDM,Meridian Direct Mail,1,Operating,True
+3,MAC,Meridian Aviation Cargo,2,Operating,True
+4,MIS,Meridian Inflight Services,2,Operating,True
+5,MLG,Meridian Logistics,3,Operating,True
+6,MMR,Meridian Marine,3,Operating,True
+7,MRT,Meridian Retail,4,Operating,True
+8,MDS,Meridian Digital Services,4,Operating,True

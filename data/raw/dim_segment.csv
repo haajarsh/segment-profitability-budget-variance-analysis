@@ -1,0 +1,5 @@
+segment_key,segment_name,segment_description,display_order
+1,Postal,"Mail, direct mail, and postal services",1
+2,Aviation,"Cargo handling, engineering, in-flight catering",2
+3,Logistics,"3PL, freight forwarding, marine logistics",3
+4,Retail,"Retail outlets, digital services, financial products",4

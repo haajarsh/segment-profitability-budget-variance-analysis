@@ -1,0 +1,30 @@
+account_key,account_code,account_name,account_category,account_subcategory,pnl_display_order,is_revenue_flag,is_cost_flag
+1,4100,Postal Revenue,Revenue,Mail,1,True,False
+2,4200,Parcel Revenue,Revenue,Parcel,2,True,False
+3,4300,Cargo Revenue,Revenue,Aviation,3,True,False
+4,4310,Catering Revenue,Revenue,Aviation,4,True,False
+5,4400,Logistics Revenue,Revenue,Logistics,5,True,False
+6,4500,Retail Revenue,Revenue,Retail,6,True,False
+7,4900,Other Revenue,Revenue,Other,7,True,False
+8,5100,Linehaul Cost,Direct Cost,Transport,10,False,True
+9,5110,Last-Mile Delivery Cost,Direct Cost,Transport,11,False,True
+10,5120,Fuel — Ground,Direct Cost,Transport,12,False,True
+11,5130,Aviation Fuel,Direct Cost,Aviation,13,False,True
+12,5140,Ground Handling,Direct Cost,Aviation,14,False,True
+13,5200,Cost of Goods Sold — Retail,Direct Cost,Retail,15,False,True
+14,5300,Subcontractor Costs,Direct Cost,Transport,16,False,True
+15,6100,Operations Salaries,Staff,Salaries,20,False,True
+16,6200,Corporate Salaries,Staff,Salaries,21,False,True
+17,6300,Benefits & EPF,Staff,Benefits,22,False,True
+18,7100,Facilities Rent,OPEX,Facilities,30,False,True
+19,7200,Utilities,OPEX,Facilities,31,False,True
+20,7300,IT & Software,OPEX,Technology,32,False,True
+21,7400,Professional Fees,OPEX,Corporate,33,False,True
+22,7500,Marketing,OPEX,Commercial,34,False,True
+23,7600,Repairs & Maintenance,OPEX,Operations,35,False,True
+24,7700,Insurance,OPEX,Corporate,36,False,True
+25,7800,Depreciation & Amortization,OPEX,Non-Cash,37,False,True
+26,7900,Other OPEX,OPEX,Other,38,False,True
+27,8100,Interest Expense,Below-Line,Finance,50,False,True
+28,8200,FX Gain/Loss,Below-Line,Finance,51,False,False
+29,8900,Tax Expense,Below-Line,Tax,52,False,True

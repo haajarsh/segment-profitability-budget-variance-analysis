@@ -1,0 +1,5 @@
+scenario_key,scenario_name,display_scenario,is_comparable_flag
+1,Actual,AC,TRUE
+2,Budget,BU,TRUE
+3,Forecast,FC,TRUE
+4,Prior Year,PY,TRUE
